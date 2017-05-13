@@ -3,7 +3,7 @@
     <div class="row">
       <div class="three slides">
         <div v-for="slide in slides">
-          <Slide :content="slide.content"></Slide>
+          <Slide :content="slide.content" :isEditable=false></Slide>
         </div>
       </div>
       <div class="nine selected slide">
