@@ -6,9 +6,6 @@
 </template>
 
 <script>
-  import 'medium-editor/dist/css/medium-editor.min.css';
-  import 'medium-editor/dist/css/themes/beagle.min.css';
-
   export default {
     name: 'app',
   };
@@ -27,7 +24,7 @@
   #logo {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50%;
     width: 50px;
   }
 

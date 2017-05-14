@@ -1,11 +1,10 @@
 <template>
-  <div ref="editable">
-    {{ content }}
+  <div class="markdown html content">
+    <div v-html="content"></div>
   </div>
 </template>
-<script>
-  import MediumEditor from 'medium-editor';
 
+<script>
   export default {
     props: {
       content: {
@@ -16,11 +15,12 @@
         type: Boolean,
       },
     },
-    mounted() {
-      if (this.isEditable) {
-        /* eslint-disable no-new */
-        new MediumEditor(this.$refs.editable);
-      }
-    },
   };
 </script>
+
+<style scoped>
+  .markdown.html.content {
+    text-align: left;
+    padding: 25px;
+  }
+</style>
